@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+ 
+}
+
+.pokemongrid__wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.pokemongrid__container{
+ 
+  background-color: yellow;
+  border: 1px solid red;
+  color:red;
+  
+
+
+}
