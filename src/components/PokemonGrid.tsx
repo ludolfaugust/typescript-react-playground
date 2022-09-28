@@ -1,6 +1,7 @@
 import Pokemon from "../model/model"
 import "../App.css";
 import styled from "styled-components";
+import {Button} from '../shared/Button';
 
 interface Props {
     pokemon: Pokemon[];
@@ -30,7 +31,7 @@ const deleteHandler = (name: string) =>{
 
   return (
    <>
-   <Title onClick={()=>alert("NOT ME")}>Click to Destroy</Title>
+   <Button onClick={()=>alert("NOT ME")}>Click to Destroy</Button>
     <div className="pokemongrid__wrapper">
         
         {pokemon.map((i, index)=>(

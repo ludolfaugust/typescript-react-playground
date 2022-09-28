@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import Counter from './components/Counter';
 import PokemonGrid from './components/PokemonGrid';
 import Pokemon from './model/model';
 
@@ -23,9 +24,9 @@ function App() {
   },[])
 
   return (
-    <>
-    
- <PokemonGrid pokemon={pokemon} setPokemon={setPokemon}/>
+    <> 
+        <PokemonGrid pokemon={pokemon} setPokemon={setPokemon}/>
+        <Counter />
     </>
   );
 }
